@@ -1,2 +1,3 @@
-const test = 'minha primeira string'
-console.log(test)
+const app = require('./app')
+
+app.listen(3000, () => 'server listen on port 3000')

@@ -20,11 +20,19 @@
     "nodemon": "^2.0.1",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "supertest": "^4.0.2"
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
+    "test:dev": "cross-env NODE_ENV=test jest --watch",
     "start": "cross-env NODE_ENV=development npx nodemon index.js",
     "server": "cross-env NODE_ENV=production npx nodemon.index.js"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^5.2.0",
+    "koa-router": "^7.4.0"
   }
 }
